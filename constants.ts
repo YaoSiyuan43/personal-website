@@ -104,13 +104,13 @@ export const WEB_PROJECTS: WebProject[] = [
         "决策层：整合Google Trends API实现商品搜索热度可视化，加入AI时间节点和趋势定量分析。"
     ],
     images: [
-        "https://i.postimg.cc/PJDgrdw3/image.png",
-        "https://i.postimg.cc/CMfT4sQY/1.png",
-        "https://i.postimg.cc/L5Pc6m1w/2.jpg",
-        "https://i.postimg.cc/Pf8sMQRH/3.png",
-        "https://i.postimg.cc/3xNZgntc/4.jpg",
-        "https://i.postimg.cc/Y0F5qtWd/5.png",
-        "https://i.postimg.cc/FzSMshLC/6.png"
+        "https://i.postimg.cc/1XYkyMMF/IMG-2976.png",
+        "https://i.postimg.cc/GtSWbzz2/IMG-2975.png",
+        "https://i.postimg.cc/mk6vTVVS/IMG-2974.png",
+        "https://i.postimg.cc/brF7qLLx/IMG-2973.png",
+        "https://i.postimg.cc/Kjs6mQQk/IMG-2970.png",
+        "https://i.postimg.cc/hv3kKMMT/IMG-2972.png",
+        "https://i.postimg.cc/4yFDXwwy/IMG-2971.png"
     ]
   },
   { 
