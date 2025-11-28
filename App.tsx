@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { ArrowDownRight, Instagram, Mail, Menu, X, Globe, Leaf, ChevronLeft, ChevronRight, CheckCircle2, BookOpen, Sparkles } from 'lucide-react';
+import { ArrowDownRight, Instagram, Mail, Menu, X, Globe, Leaf, ChevronLeft, ChevronRight, CheckCircle2, BookOpen } from 'lucide-react';
 import Reveal from './components/Reveal';
 import GlassCard from './components/GlassCard';
 import Carousel3D from './components/Carousel3D';
@@ -45,7 +45,6 @@ const NovelRenderer: React.FC<{ content: string }> = ({ content }) => {
 
 const App: React.FC = () => {
   const [lang, setLang] = useState<Language>('zh');
-  const [activeSection, setActiveSection] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const [selectedWorkId, setSelectedWorkId] = useState<number | null>(null);
@@ -65,14 +64,6 @@ const App: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
-      const sections = ['home', 'experience', 'works', 'gallery'];
-      for (const section of sections) {
-        const el = document.getElementById(section);
-        if (el) {
-          const offset = el.offsetTop - 300;
-          if (window.scrollY >= offset && window.scrollY < offset + el.offsetHeight) setActiveSection(section);
-        }
-      }
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
